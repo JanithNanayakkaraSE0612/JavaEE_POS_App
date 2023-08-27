@@ -21,11 +21,11 @@
     <h1 class="position-absolute" id="nav"></h1>
     <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
         <li class="list-group-item bg-white" id="lnkHome"><a href="../index.html">Home</a></li>
-        <li class="list-group-item bg-danger text-white" id="lnkCustomer"><a class="text-white"
-                                                                             href="customer.html">Customer</a>
+        <li class="list-group-item bg-danger" id="lnkCustomer"><a class="text-white" href="customer.html">Customer</a>
         </li>
         <li class="list-group-item bg-white" id="lnkItem"><a href="item.html">Item</a></li>
-        <li class="list-group-item bg-white" id="lnkOrders"><a href="purchase-order.html">Orders</a></li>
+        <li class="list-group-item bg-white" id="lnkOrders"><a href="orders.html">Orders</a></li>
+        <li class="list-group-item bg-white" id="lnkPlaceOrders"><a href="purchase-order.html">Place Order</a></li>
     </ul>
 </header>
 
@@ -50,11 +50,7 @@
                     <input name="cusAddress" class="form-control" id="txtCustomerAddress" type="text">
                     <span class="control-error" id="lblcusaddress"></span>
                 </div>
-                <div class="form-group">
-                    <label for="txtCustomerSalary">Customer Salary</label>
-                    <input name="cusSalary" class="form-control" id="txtCustomerSalary" type="text">
-                    <span class="control-error" id="lblcussalary"></span>
-                </div>
+
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary" id="btnCustomer">
                         Save Customer
@@ -66,7 +62,7 @@
                             id="btnUpdate">Update
                     </button>
                     <button type="button" class="btn btn-success" id="btnGetAll">Get All</button>
-                    <button type="button" class="btn btn-danger" id="btnClear1">Clear All</button>
+                    <button type="button" class="btn btn-danger" id="btnClear">Clear All</button>
                 </div>
             </form>
         </div>
@@ -88,7 +84,7 @@
 </main>
 
 <script src="../assets/js/frameworks/jquery-3.6.1.min.js"></script>
-<script src="../assets/js/CustomerScript.js"></script>
+<script src="../Controller/CustomerController.js"></script>
 <script src="../assets/js/frameworks/bootstrap.min.js"></script>
 
 </body>
