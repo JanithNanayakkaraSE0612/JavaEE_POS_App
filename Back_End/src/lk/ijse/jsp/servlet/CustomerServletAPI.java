@@ -34,7 +34,7 @@ public class CustomerServletAPI extends HttpServlet {
                 customerObject.add("address", address);
                 allCustomers.add(customerObject.build());
             }
-            
+
             resp.getWriter().print(allCustomers.build());
 
         } catch (ClassNotFoundException e) {
