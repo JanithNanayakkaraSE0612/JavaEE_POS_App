@@ -12,7 +12,9 @@ import java.sql.*;
 
 @WebServlet(urlPatterns = {"/pages/customer"})
 public class CustomerServletAPI extends HttpServlet {
-
+        public CustomerServletAPI(){
+            System.out.println("Invoked");
+        }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         try {
