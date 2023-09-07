@@ -15,5 +15,6 @@ public class ResponseUtil {
         }else {
             object.add("data","");
         }
+        return object.build();
     }
 }
