@@ -12,6 +12,8 @@ public class ResponseUtil {
         object.add("message",message);
         if (data.length>0){
             object.add("data",data[0]);
+        }else {
+            object.add("data","");
         }
     }
 }
