@@ -6,9 +6,12 @@ import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 
 public class ResponseUtil {
-    public static JsonObject genJson(String state , String message , JsonArray...date){
+    public static JsonObject genJson(String state , String message , JsonArray...data){
         JsonObjectBuilder object = Json.createObjectBuilder();
         object.add("state",state);
         object.add("message",message);
+        if (data.length>0){
+            object.add("data",data[0]);
+        }
     }
 }
